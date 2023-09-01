@@ -9,7 +9,7 @@ int main() {
     printf("5. Sphere\n");
     printf("6. Hemisphere\n");
     while (shape < 1 || shape > 6)
-    {
+    {   
         printf("Enter shape: ");
         scanf("%d", &shape);
 
@@ -20,15 +20,16 @@ int main() {
     }
     
 
-    printf("1. Total surface area\n");
-    if (shape != 5) {
-        printf("2. Curved surface area\n");
-        printf("3. Volume\n");
-    } else {
-        printf("2. Volume\n");
-    }
+    
     while (choice < 1 || choice > 3)
-    {
+    {   
+        printf("1. Total surface area\n");
+        if (shape != 5) {
+            printf("2. Curved surface area\n");
+            printf("3. Volume\n");
+        } else {
+            printf("2. Volume\n");
+        }
         printf("Enter choice: ");
         scanf("%d", &choice);
 
