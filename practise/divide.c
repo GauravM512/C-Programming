@@ -2,7 +2,7 @@
 
 int divide(int a,int b)
 {
-    if (a<b)
+    if (a==0)
         return 0;
     else
         return 1+divide(a-b,b);
